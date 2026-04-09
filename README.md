@@ -32,7 +32,7 @@
       <div class="card p-4">
 
         <h1 class="text-center">🌊 AquaVia / أكوافيا</h1>
-        <h5 class="text-center">الماء من الهواء</h5>
+        <h4 class="text-center">الماء من الهواء</h4>
 
         <hr>
 
@@ -65,7 +65,7 @@
         <hr>
 
         <p class="text-center">
-          👤 Developed by <b>Nezar Bachir Jdid</b>
+          👤 Developed by <b>نزار بشير جديد</b>
         </p>
 
       </div>
