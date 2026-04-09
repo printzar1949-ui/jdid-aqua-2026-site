@@ -1,3 +1,6 @@
+
+      <div class="card p-4">
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -11,6 +14,7 @@
     body {
       background: linear-gradient(135deg, #e0f7ff, #f4f7ff);
       font-family: Arial;
+      direction: rtl;
     }
     .card {
       border-radius: 20px;
@@ -25,12 +29,52 @@
 <body>
 
 <div class="container mt-5">
-  <div class="row justify-content-center">
 
-    <div class="col-md-9">
+  <div class="card p-4">
 
-      <div class="card p-4">
+    <h1 class="text-center">🌊 أكوافيا</h1>
+    <h4 class="text-center">الماء من الهواء</h4>
 
+    <hr>
+
+    <h4>💡 حول المشروع</h4>
+    <p>
+      أكوافيا هو مشروع بيئي مبتكر يهدف إلى توليد مياه نظيفة من الهواء الجوي باستخدام تقنية التكثيف والتنقية.
+    </p>
+
+    <h4>🌍 الأهداف</h4>
+    <ul>
+      <li>توفير مياه شرب نظيفة</li>
+      <li>الحد من ندرة المياه</li>
+      <li>دعم البيئة المستدامة</li>
+    </ul>
+
+    <hr>
+
+    <h4>🌊 About AquaVia</h4>
+    <p>
+      AquaVia is an innovative environmental project that extracts clean water from atmospheric air using condensation and purification technology.
+    </p>
+
+    <h4>🎯 Objectives</h4>
+    <ul>
+      <li>Provide clean drinking water</li>
+      <li>Reduce water scarcity</li>
+      <li>Support sustainable environment</li>
+    </ul>
+
+    <hr>
+
+    <p class="text-center">
+      👤 Developed by <b>نزار بشير جديد</b>
+    </p>
+
+  </div>
+
+</div>
+
+</body>
+</html>
         <h1 class="text-center">🌊 AquaVia / أكوافيا</h1>
         <h4 class="text-center">الماء من الهواء</h4>
 
