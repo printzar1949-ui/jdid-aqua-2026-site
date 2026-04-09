@@ -1,88 +1,79 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <title>AquaVia BMI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaVia - أكوافيا</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        body {
-            background: #f4f7ff;
-        }
-        .card {
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        #result {
-            font-size: 22px;
-            font-weight: bold;
-            margin-top: 15px;
-        }
-    </style>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #e0f7ff, #f4f7ff);
+      font-family: Arial;
+    }
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #0d6efd;
+    }
+  </style>
 </head>
 
 <body>
 
 <div class="container mt-5">
-    <div class="row justify-content-center">
+  <div class="row justify-content-center">
 
-        <div class="col-md-5">
-            <div class="card p-4">
+    <div class="col-md-9">
 
-                <h3 class="text-center mb-3">AquaVia BMI Calculator</h3>
+      <div class="card p-4">
 
-                <label>الطول (سم):</label>
-                <input id="txbHeight" class="form-control" placeholder="مثال: 170">
+        <h1 class="text-center">🌊 AquaVia / أكوافيا</h1>
+        <h5 class="text-center">الماء من الهواء</h5>
 
-                <label class="mt-2">الوزن (كغ):</label>
-                <input id="txbWeight" class="form-control" placeholder="مثال: 70">
+        <hr>
 
-                <button class="btn btn-primary mt-3" id="ButtonCal">
-                    احسب BMI
-                </button>
+        <h4>💡 حول المشروع</h4>
+        <p>
+          أكوافيا هو مشروع بيئي مبتكر يهدف إلى توليد مياه نظيفة من الهواء الجوي باستخدام تقنية التكثيف والتنقية.
+        </p>
 
-                <div id="result" class="text-center"></div>
+        <h4>🌍 الأهداف</h4>
+        <ul>
+          <li>توفير مياه شرب نظيفة</li>
+          <li>الحد من ندرة المياه</li>
+          <li>دعم البيئة المستدامة</li>
+        </ul>
 
-            </div>
-        </div>
+        <hr>
+
+        <h4>🌊 About AquaVia</h4>
+        <p>
+          AquaVia is an innovative environmental project that extracts clean water from atmospheric air using condensation and purification technology.
+        </p>
+
+        <h4>🎯 Objectives</h4>
+        <ul>
+          <li>Provide clean drinking water</li>
+          <li>Reduce water scarcity</li>
+          <li>Support sustainable environment</li>
+        </ul>
+
+        <hr>
+
+        <p class="text-center">
+          👤 Developed by <b>Nezar Bachir Jdid</b>
+        </p>
+
+      </div>
 
     </div>
+
+  </div>
 </div>
-
-<script>
-$(function () {
-
-    $('#ButtonCal').click(function () {
-
-        let height = parseFloat($('#txbHeight').val());
-        let weight = parseFloat($('#txbWeight').val());
-
-        if (!height || !weight) {
-            $('#result').html("⚠️ الرجاء إدخال القيم بشكل صحيح");
-            return;
-        }
-
-        height = height / 100;
-
-        let bmi = weight / (height * height);
-        let status = "";
-
-        if (bmi < 18.5) status = "نحيف";
-        else if (bmi < 25) status = "طبيعي";
-        else if (bmi < 30) status = "زيادة وزن";
-        else status = "سمنة";
-
-        $('#result').html(
-            "BMI: " + bmi.toFixed(2) + "<br>الحالة: " + status
-        );
-
-    });
-
-});
-</script>
 
 </body>
 </html>
